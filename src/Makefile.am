@@ -10,3 +10,5 @@ libhelper_a_SOURCES = helper.cpp helper.h
 main_LDADD = libhelper.a ../my_inc/libmyadd.a
 # LDADD specifies which libraries to compile into "main". We have two libraries.
 # libhelper comes from this directory and libmyadd come from my_inc directory.
+
+AM_CPPFLAGS=-I$(top_builddir) --std=c++11
